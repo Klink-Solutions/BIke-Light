@@ -1,4 +1,4 @@
-#include "esp_sleep.h"
+//#include "esp_sleep.h"
 #include <Wire.h>
 #include <Adafruit_Sensor.h>
 #include <Adafruit_ADXL345_U.h>
@@ -10,6 +10,7 @@ RTC_DATA_ATTR int bootCount = 0;// needs to be keept in RTC to survive sleep
 
 //Accelerometer stuff
 Adafruit_ADXL345_Unified accel = Adafruit_ADXL345_Unified(1);
+
 
 const float ACCEL_THRESHOLD = 1.0;// threshold 
 //Total accel value x
@@ -31,7 +32,6 @@ void setup() {
   pinMode(led, OUTPUT);   // initialize digital pin led as an output
   pinMode(hall, INPUT_PULLUP);   // initialize digital pin hall as an imput
 
-
   //Increment boot number and print it every reboot
   bootCount++;
   Serial.println("Boot number: " + String(bootCount));
@@ -43,7 +43,8 @@ void setup() {
   }
   Serial.println("ADXL Ready");
   accel.setRange(ADXL345_RANGE_4_G);
- 
+  accel.writeRegister(0x2D, 0x08);      //Manual change of sleep bit in register to on
+  Serial.println("ADXL awake - normal mode");
  while (digitalRead(hall) == LOW) {
     float magnitude = readAccelMagnitude();
     Serial.print("Accel magnitude:");
@@ -59,7 +60,7 @@ void setup() {
       delay(100);
        } 
        else {
-      // No motion — LED off
+      // LED off
         digitalWrite(led, LOW);
         Serial.println("No Breaking Detected");
        }
@@ -67,6 +68,8 @@ void setup() {
   }
 
   // Magnet was removed — wait 1 second then sleep
+  accel.writeRegister(0x2D, 0x0C);  //Manual change of sleep bit in register to off
+  Serial.println("ADXL sleeping");
   Serial.println("Magnet removed -  Sleeping in 1 second");
   digitalWrite(led, LOW);  // Make sure LED is off
   delay(1000);
@@ -78,4 +81,4 @@ void setup() {
   esp_deep_sleep_start();
 }
 
-void loop() { }//we kinda dont need this at all i guess
+void loop() { }//We kinda don't need this at all I guess
