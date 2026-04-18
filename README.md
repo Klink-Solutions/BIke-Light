@@ -6,8 +6,8 @@
 ## Description
 
 A F1® rain light inspired bike break light
-<img>
-As an avid biker and lover of F1 i felt why not bring the two together to make me feel a bit faster. While many bikelights that are red and blink do exist mine does so with function. I found it usefull in group rides that after long periods of time you may be caugth off guard by a biker infront of you slowing down. This is where the idea of the adaptive breaklight came into play. Besides the usability for fellow bikers the saftey benifits it provides to you from drivers is enormous. Why do cars need break lights but bikes don't? 
+
+As an avid biker and lover of F1 I felt why not bring the two together to make me feel a bit faster. While many bikelights that are red and blink do exist; mine does so with function. I found it useful in group rides where you may be caugth off guard by a biker infront of you slowing down. This is where the idea of the adaptive breaklight came into play. Besides the usability for fellow bikers the saftey benifits it provides to you from drivers is enormous. Why do cars need break lights but bikes don't? 
 
 #### Features
   * Adaptive breaking signals your rate of breaking to surrounding drivers and pedestrians 
@@ -60,10 +60,10 @@ Klemmerl38@gmail.com
 
 This repository contains all components needed for the project:
 
-- CAD files for the housing and bike specific brackets  
-- Source code for Bike light
-- Gerber files for PCB manufacturing 
-- Supporting project documentation
+- CAD files for the housing (v1.0) 
+- Current code for Bike light functionality that I was able to test
+- Gerber files for PCB manufacturing (v1)
+- Supporting project documentation (ReadMe)
 
 ## Screenshots
 <img width="1082" height="725" alt="Screenshot 2026-04-07 194901" src="https://github.com/user-attachments/assets/08bb061d-5ad6-4fa1-938e-d536803a75ab" />
@@ -155,6 +155,7 @@ This repository contains all components needed for the project:
     <td class="tg-0lax">Digikey</td>
   </tr>
 </tbody></table>
+
 ## License
 MIT LIcence
 
