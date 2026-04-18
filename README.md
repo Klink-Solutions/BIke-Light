@@ -43,7 +43,7 @@ If you are unable to connect the device to your computer to push updates; try ho
 ## Authors
 
 Lucas Klemmer  
-Klemmerl38@gmail.com
+klinksolutions22@gmail.com
 
 ## Version History
 * 0.1
