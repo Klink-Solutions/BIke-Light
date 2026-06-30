@@ -60,9 +60,9 @@ klinksolutions22@gmail.com
 
 This repository contains all components needed for the project:
 
-- CAD files for the housing (v1.0) 
-- Current code for Bike light functionality that I was able to test
-- Gerber files for PCB manufacturing (v1)
+- CAD files for the housing & universal mount (v2.0) 
+- Initial full release code for Bike light 
+- Gerber files for PCB manufacturing (v2)
 - Supporting project documentation (ReadMe)
 
 ## Screenshots
