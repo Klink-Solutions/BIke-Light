@@ -1,6 +1,7 @@
 # F1® Smart Bike Light
 
 ### A universal bike break light designed to improve safety during day and night time operation.
+<img width="683" height="911" alt="0" src="https://github.com/user-attachments/assets/8c02f844-07b1-47c6-9c79-53c0d4c04c45" />
 <img width="462" height="462" alt="Bike_Light_2026-Apr-03_11-06-38PM-000_CustomizedView57686941933_png" src="https://github.com/user-attachments/assets/17afd880-2533-4cfc-8f2b-a7b1ca769aea" />
 
 ## Description
